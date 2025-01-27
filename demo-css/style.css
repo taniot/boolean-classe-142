@@ -1,0 +1,38 @@
+/*********
+demo 1
+**********/
+
+#prova {
+  color: purple
+}
+
+.pluto {
+  color: yellow;
+}
+
+/*********
+demo 2
+**********/
+.pippo {
+  color: blue;
+}
+
+/*********
+demo 3
+**********/
+
+h1 {
+  color: red;
+  background-color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.drago {
+  width: 200px;
+  height: 200px;
+  background-image: url('img/drago.png');
+  border: 6px solid rgb(166, 15, 15);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: darksalmon;
+}
