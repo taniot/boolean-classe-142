@@ -98,3 +98,21 @@ h1 {
 .content-list-items {
   list-style-position: inside;
 }
+
+#table-content {
+  border-collapse: collapse;
+}
+
+#table-content thead {
+  background-color: #20a9e5;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#table-content .main-col {
+  width: 50%;
+}
+
+#table-content .odd {
+  background-color: #b1e5f2;
+}
