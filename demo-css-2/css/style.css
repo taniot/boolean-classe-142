@@ -1,0 +1,61 @@
+/******
+Reset
+******/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: chartreuse;
+  margin-bottom: 20px;
+
+}
+
+.box-border {
+  /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+
+  /* shorthand */
+  /* border-left: 5px solid black;
+    border-right: 20px dotted red; */
+
+
+  border: 2px solid black;
+  /* border-radius: 50px; */
+  /* border-top-left-radius: 20px; */
+  border-radius: 50%;
+}
+
+.box-padding {
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+.box-margin {
+  margin: auto;
+}
+
+
+.box-content-box {
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: content-box;
+}
+
+
+.box-border-box {
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.box-demo-eredi {
+  color: white;
+}
