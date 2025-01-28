@@ -1,0 +1,44 @@
+/********
+Reset
+********/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/********
+Common
+********/
+
+
+
+/*********
+Header
+*********/
+
+header {
+  background-color: #4ea0ff;
+  background-image: url('../img/pattern.png');
+  background-size: 30%;
+
+  /* height: 100px; */
+  /* padding-top: 40px;
+  padding-bottom: 15px;
+  padding-left: 7px; */
+
+  /*** shorthand ***/
+
+  padding: 40px 0 15px 7px;
+
+}
+
+#logo {
+  height: 40px;
+}
+
+
+/********
+Main
+********/
