@@ -11,13 +11,10 @@ ID
 
 */
 
-
-
 * {
   margin: 0;
   padding: 0;
 }
-
 
 /********
 Common
@@ -39,6 +36,17 @@ Common
   background-color: #ffff00;
 }
 
+/*********
+Type
+*********/
+
+.main-light-color {
+  color: #808080;
+}
+
+footer h4 {
+  margin-bottom: 12px;
+}
 
 /*********
 Header
@@ -73,10 +81,6 @@ Main
 
 h1 {
   font-size: 40px;
-}
-
-.subtitle {
-  color: #808080;
 }
 
 .author {
@@ -115,4 +119,28 @@ h1 {
 
 #table-content .odd {
   background-color: #b1e5f2;
+}
+
+/********
+Footer
+********/
+
+.box-image {
+  width: 210px;
+  height: 160px;
+  background-color: red;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#image-a {
+  background-image: url('../img/monitor.jpg');
+  background-size: cover;
+}
+
+#image-b {
+  background-image: url('../img/graph.jpg');
 }
