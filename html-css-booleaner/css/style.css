@@ -35,6 +35,9 @@ Common
   margin-bottom: 20px;
 }
 
+.highlights {
+  background-color: #ffff00;
+}
 
 
 /*********
@@ -88,4 +91,10 @@ h1 {
 
 .caption {
   font-size: 12px;
+}
+
+/*** content section ***/
+
+.content-list-items {
+  list-style-position: inside;
 }
