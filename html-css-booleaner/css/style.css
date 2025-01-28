@@ -2,6 +2,17 @@
 Reset
 ********/
 
+/*****
+
+Asterisco
+Tag
+Classe
+ID
+
+*/
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +23,13 @@ Reset
 Common
 ********/
 
+.container {
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  max-width: 70%;
+
+  margin: 0 auto;
+}
 
 
 /*********
@@ -30,7 +48,9 @@ header {
 
   /*** shorthand ***/
 
-  padding: 40px 0 15px 7px;
+  padding: 40px 0px 15px 0px;
+
+  margin-bottom: 25px;
 
 }
 
@@ -42,3 +62,19 @@ header {
 /********
 Main
 ********/
+
+h1 {
+  font-size: 40px;
+}
+
+.subtitle {
+  color: #808080;
+}
+
+.author {
+  color: #20a9e5;
+}
+
+.article-date {
+  font-size: 14px;
+}
