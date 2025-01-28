@@ -31,6 +31,11 @@ Common
   margin: 0 auto;
 }
 
+.mb-default {
+  margin-bottom: 20px;
+}
+
+
 
 /*********
 Header
@@ -50,7 +55,7 @@ header {
 
   padding: 40px 0px 15px 0px;
 
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 
 }
 
@@ -77,4 +82,10 @@ h1 {
 
 .article-date {
   font-size: 14px;
+}
+
+/*** image section ***/
+
+.caption {
+  font-size: 12px;
 }
