@@ -88,3 +88,78 @@ Main
   color: #ffffff;
   border: 1px solid #14aaf5;
 }
+
+.current-section {
+  margin-bottom: 20px;
+}
+
+.title-section {
+  margin-bottom: 15px;
+}
+
+.status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ff1010;
+  color: #ff1010;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 11px;
+  line-height: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.checked {
+  border: 1px solid green;
+  color: green;
+}
+
+.tasks-list {
+  margin-bottom: 5px;
+}
+
+.tasks {
+  list-style-type: none;
+}
+
+.text {
+  vertical-align: middle;
+}
+
+.category {
+  display: inline-block;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  font-size: 11px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.category-editorial {
+  background-color: #09a9ed;
+  border-color: #09a9ed;
+}
+
+.category-recruiting {
+  background-color: #2cc6ab;
+  border-color: #2cc6ab;
+}
+
+.category-q1 {
+  background-color: #ab5de6;
+  border-color: #ab5de6;
+}
+
+.category-mobile {
+  background-color: #ff9b00;
+  border-color: #ff9b00;
+}
+
+.category-website {
+  background-color: #ec4a9d;
+  border-color: #ec4a9d;
+}
