@@ -64,6 +64,13 @@ Main
   border-bottom: 2px solid #f6f8f9;
 }
 
+#tasks-section {
+  padding: 35px 50px;
+  color: #434851;
+}
+
+
+
 .btn {
   all: unset;
   background-color: #ffffff;
