@@ -59,3 +59,85 @@ Reset
 .box-demo-eredi {
   color: white;
 }
+
+p.starred {
+  color: red;
+}
+
+p.starred.valerio {
+  color: blue;
+}
+
+
+
+.starred {
+  color: green;
+}
+
+
+input {
+  background-color: yellow;
+  color: red;
+}
+
+input[type="email"] {
+  color: blue;
+}
+
+input[type="text"] {
+  background-color: aqua;
+}
+
+div.demo-display {
+  display: none;
+}
+
+
+a {
+  background-color: yellow;
+  color: red;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  color: blue;
+  background-color: darkgoldenrod;
+  width: 100px;
+  height: 100px;
+}
+
+a:visited {
+  color: green;
+  background-color: blueviolet;
+}
+
+a:focus {
+  color: yellow;
+  background-color: blue;
+}
+
+ul.demo-pseudo-selettore li {
+  background-color: yellow;
+  color: red;
+}
+
+ul.demo-pseudo-selettore li:first-child {
+  background-color: green;
+}
+
+ul.demo-pseudo-selettore li:last-child {
+  background-color: blue;
+}
+
+ul.demo-pseudo-selettore li.first {}
+
+ul.demo-pseudo-selettore li.last {}
+
+div.primo-div>p {
+  color: red;
+}
+
+div.primo-div+p {
+  color: green;
+}
