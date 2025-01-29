@@ -1,3 +1,45 @@
+/******
+Reset
+******/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/******
+Common
+******/
+
 body {
-  background-color: pink;
+  background-color: #f6f8f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/********
+Header
+********/
+
+header {
+  background-color: #ffffff;
+  padding: 10px 20px
+    /* padding: 10px 20px 10px 20px;
+  padding: 10px 20px 10px;
+
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px; */
+
+}
+
+#logo-img {
+  vertical-align: middle;
+}
+
+#logo-text {
+  font-size: 27px;
+  vertical-align: middle;
+  font-weight: bold;
 }
