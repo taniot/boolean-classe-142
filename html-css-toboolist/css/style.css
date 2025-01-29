@@ -53,8 +53,31 @@ Main
 
 .container {
   /* background-color: #ffffff; */
-  background-color: red;
+  background-color: #ffffff;
   max-width: 790px;
   margin: 0 auto;
   border-radius: 5px;
+}
+
+#button-section {
+  padding: 14px 50px 8px;
+  border-bottom: 2px solid #f6f8f9;
+}
+
+.btn {
+  all: unset;
+  background-color: #ffffff;
+  border: 1px solid #c4cbd0;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: #c4cbd0;
+  cursor: pointer;
+
+}
+
+.btn-add {
+  background-color: #14aaf5;
+  color: #ffffff;
+  border: 1px solid #14aaf5;
 }
