@@ -23,14 +23,16 @@ Header
 
 header {
   background-color: #ffffff;
-  padding: 10px 20px
-    /* padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
+  /* padding: 10px 20px 10px 20px;
   padding: 10px 20px 10px;
 
   padding-top: 10px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px; */
+
+  margin-bottom: 40px;
 
 }
 
@@ -42,4 +44,17 @@ header {
   font-size: 27px;
   vertical-align: middle;
   font-weight: bold;
+}
+
+
+/********
+Main
+********/
+
+.container {
+  /* background-color: #ffffff; */
+  background-color: red;
+  max-width: 790px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
