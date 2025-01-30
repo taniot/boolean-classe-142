@@ -1,0 +1,28 @@
+.container-flex {
+  background-color: lightcoral;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.container-flex>div {
+  background-color: cornflowerblue;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#ex-2 .container-flex {
+  flex-direction: row
+}
+
+#ex-3 .container-flex {
+  justify-content: flex-end;
+}
+
+#ex-4 .container-flex {}
+
+#ex-4 .container-flex div {
+  width: 400px;
+}
