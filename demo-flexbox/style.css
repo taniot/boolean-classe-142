@@ -14,15 +14,139 @@
 }
 
 #ex-2 .container-flex {
-  flex-direction: row
+  flex-direction: column
 }
 
 #ex-3 .container-flex {
   justify-content: flex-end;
 }
 
-#ex-4 .container-flex {}
+#ex-4 .container-flex {
+  align-items: flex-end;
+  height: 200px;
+}
 
-#ex-4 .container-flex div {
-  width: 400px;
+
+
+#ex-5 .container-flex {
+  flex-wrap: wrap;
+}
+
+#ex-6 .container-flex {
+  flex-direction: row;
+}
+
+#ex-6 .container-flex>div {
+  flex-basis: 100px;
+  /* width: 200px; */
+  height: 500px;
+
+}
+
+#ex-7 .container-flex {
+  flex-direction: column;
+}
+
+
+
+
+/******
+Layout
+*****/
+
+.container {
+  background-color: aquamarine;
+  display: flex;
+  height: 500px;
+
+}
+
+/* .container>div {
+
+} */
+
+
+/* .menu {
+  background-color: red;
+  width: 300px;
+} */
+
+.main {
+  background-color: green;
+  flex-grow: 1;
+  /* width: calc(100% - 300px); */
+
+}
+
+
+/*****
+Layout 2 
+*****/
+
+.debug header {
+  height: 100px;
+  border: 2px dotted black;
+}
+
+.debug .menu {
+  background-color: red;
+}
+
+.debug footer {
+  height: 100px;
+}
+
+.debug .container-demo {
+  height: 400px;
+}
+
+.debug .content>div {
+  border: 2px dotted white;
+  padding: 20px;
+}
+
+
+
+#lay-2 header {
+  background-color: burlywood;
+  margin-bottom: 20px;
+}
+
+#lay-2 main {
+  margin-bottom: 20px;
+}
+
+#lay-2 .container-demo {
+  display: flex;
+  gap: 20px;
+
+
+}
+
+#lay-2 .menu {
+  width: 250px;
+
+  flex-shrink: 0;
+  align-self: flex-start;
+
+}
+
+#lay-2 .menu-right {
+
+  background-color: violet;
+  flex-shrink: 0;
+}
+
+#lay-2 .content {
+  background-color: green;
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+
+
+}
+
+#lay-2 footer {
+  background-color: cadetblue;
+
 }
