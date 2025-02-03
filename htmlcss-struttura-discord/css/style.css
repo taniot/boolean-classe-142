@@ -54,7 +54,31 @@ header .main-nav>div.login {
   text-align: right;
 }
 
+/* main */
+
+main .main-section {
+  background-color: #00008b;
+}
+
+main>div,
+main>section {
+  padding: 50px 0;
+}
+
+main .jumbotron {
+  background-color: #ee82ee;
+}
+
+
+
+
+
 /* debug */
 .debug header .main-nav>div {
+  border: 1px dashed black;
+}
+
+.debug main .jumbotron {
+  height: 400px;
   border: 1px dashed black;
 }
