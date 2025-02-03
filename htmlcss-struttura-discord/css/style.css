@@ -69,16 +69,16 @@ main .jumbotron {
   background-color: #ee82ee;
 }
 
-main section:nth-child(odd) {
-  background-color: aqua;
-}
-
 main section .row {
   display: flex;
 }
 
-main section .row>div {
-  background-color: yellow;
+main section:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+main section:nth-child(odd) .row {
+  flex-direction: row-reverse;
 }
 
 main section .row .aside-element {
@@ -94,16 +94,19 @@ main section .row .content-element {
 
 
 /* debug */
-.debug header .main-nav>div {
+.debug header .main-nav>div,
+.debug main .jumbotron,
+.debug .row:empty,
+.debug .row>* {
   border: 1px dashed black;
 }
 
 .debug main .jumbotron {
   height: 400px;
-  border: 1px dashed black;
+
 }
 
 .debug main section .row {
   height: 500px;
-  background-color: darkmagenta;
+  background-color: blueviolet;
 }
