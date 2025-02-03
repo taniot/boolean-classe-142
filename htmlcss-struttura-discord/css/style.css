@@ -6,6 +6,55 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: bisque;
+/* common */
+
+.container {
+  margin: 0 auto;
+  /* width: 1200px; */
+}
+
+.container.big {
+  width: 1200px;
+}
+
+.container.small {
+  width: 900px;
+}
+
+
+/* header */
+header {
+  background-color: #add8e6;
+  padding: 15px 0;
+}
+
+header .main-nav {
+  display: flex;
+  background-color: #daa520;
+
+}
+
+header .main-nav>div {
+  padding: 10px;
+}
+
+header .main-nav>div.logo,
+header .main-nav>div.login {
+  width: 240px;
+  flex-shrink: 0;
+
+}
+
+header .main-nav>div.menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header .main-nav>div.login {
+  text-align: right;
+}
+
+/* debug */
+.debug header .main-nav>div {
+  border: 1px dashed black;
 }
