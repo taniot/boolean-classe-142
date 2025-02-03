@@ -69,8 +69,28 @@ main .jumbotron {
   background-color: #ee82ee;
 }
 
+main section:nth-child(odd) {
+  background-color: aqua;
+}
 
+main section .row {
+  display: flex;
+}
 
+main section .row>div {
+  background-color: yellow;
+}
+
+main section .row .aside-element {
+  width: 490px;
+  flex-shrink: 0;
+  background-color: #ffc0cb;
+}
+
+main section .row .content-element {
+  flex-grow: 1;
+  background-color: #1e90ff;
+}
 
 
 /* debug */
@@ -81,4 +101,9 @@ main .jumbotron {
 .debug main .jumbotron {
   height: 400px;
   border: 1px dashed black;
+}
+
+.debug main section .row {
+  height: 500px;
+  background-color: darkmagenta;
 }
