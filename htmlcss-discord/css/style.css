@@ -149,19 +149,35 @@ main section:nth-child(odd) {
   background-color: #d3d3d3;
 }
 
-main section:nth-child(odd) .row {
+main section:nth-child(even) .row {
   flex-direction: row-reverse;
 }
 
 main section .row .aside-element {
   width: 490px;
   flex-shrink: 0;
-  background-color: #ffc0cb;
+  padding: 40px;
+
+}
+
+main section .row .aside-element h2 {
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+main section .row .aside-element p {
+  font-size: 20px;
+  line-height: 32px;
 }
 
 main section .row .content-element {
   flex-grow: 1;
-  background-color: #1e90ff;
+
+}
+
+main section .row .content-element img {
+  width: 100%;
 }
 
 
@@ -180,5 +196,5 @@ main section .row .content-element {
 
 .debug main section .row {
   height: 500px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
