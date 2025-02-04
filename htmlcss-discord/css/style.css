@@ -22,7 +22,7 @@ body {
 }
 
 .container.small {
-  width: 900px;
+  width: 800px;
 }
 
 ul {
@@ -45,6 +45,16 @@ a {
   color: #000000;
   border-radius: 35px;
   font-size: 14px;
+}
+
+.btn.big {
+  padding: 20px 25px;
+  font-size: 18px;
+}
+
+.btn.primary {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 
@@ -91,7 +101,13 @@ header .menu ul {
 /* main */
 
 main .main-section {
-  background-color: #00008b;
+  background-color: #255ee9;
+  background-image: url("../img/jumbo.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
 }
 
 main>div,
@@ -100,8 +116,30 @@ main>section {
 }
 
 main .jumbotron {
-  background-color: #ee82ee;
+  /* background-color: #ee82ee; */
+  color: #ffffff;
+  text-align: center;
 }
+
+main .jumbotron h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+main .jumbotron p {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+main .jumbotron .btn-container {
+  gap: 20px;
+  justify-content: center;
+}
+
+
+
+
 
 main section .row {
   display: flex;
