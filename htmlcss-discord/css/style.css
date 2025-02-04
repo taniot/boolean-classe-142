@@ -8,6 +8,10 @@
 
 /* common */
 
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .container {
   margin: 0 auto;
   /* width: 1200px; */
@@ -21,22 +25,44 @@
   width: 900px;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 35px;
+  font-size: 14px;
+}
+
 
 /* header */
 header {
-  background-color: #add8e6;
+  background-color: #255ee9;
   padding: 15px 0;
 }
 
 header .topbar {
   display: flex;
-  background-color: #daa520;
+  align-items: center;
 
 }
 
-header .topbar>* {
+/* header .topbar>* {
   padding: 10px;
-}
+} */
 
 header .topbar>div.logo,
 header .topbar>div.login {
@@ -47,12 +73,20 @@ header .topbar>div.login {
 
 header .topbar>.menu {
   flex-grow: 1;
-  text-align: center;
+
 }
 
 header .topbar>.login {
   text-align: right;
 }
+
+
+header .menu ul {
+  gap: 80px;
+  justify-content: center;
+}
+
+
 
 /* main */
 
