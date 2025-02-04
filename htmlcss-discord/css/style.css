@@ -57,6 +57,11 @@ a {
   color: #ffffff;
 }
 
+.btn.secondary {
+  background-color: #7288da;
+  color: #ffffff;
+}
+
 
 /* header */
 header {
@@ -160,13 +165,13 @@ main section .row .aside-element {
 
 }
 
-main section .row .aside-element h2 {
+main section h2 {
   font-size: 40px;
   line-height: 50px;
   margin-bottom: 30px;
 }
 
-main section .row .aside-element p {
+main section p {
   font-size: 20px;
   line-height: 32px;
 }
@@ -176,8 +181,21 @@ main section .row .content-element {
 
 }
 
-main section .row .content-element img {
+main section img {
   width: 100%;
+}
+
+main section .content {
+  text-align: center;
+}
+
+main section .content h3 {
+  padding: 40px;
+  background-image: url('../img/stars.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* width: 50%; */
+  font-size: 25px;
 }
 
 
@@ -196,5 +214,5 @@ main section .row .content-element img {
 
 .debug main section .row {
   height: 500px;
-  /* background-color: blueviolet; */
+  background-color: blueviolet;
 }
