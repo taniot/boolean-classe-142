@@ -1,0 +1,112 @@
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* common */
+
+.container {
+  margin: 0 auto;
+  /* width: 1200px; */
+}
+
+.container.big {
+  width: 1200px;
+}
+
+.container.small {
+  width: 900px;
+}
+
+
+/* header */
+header {
+  background-color: #add8e6;
+  padding: 15px 0;
+}
+
+header .topbar {
+  display: flex;
+  background-color: #daa520;
+
+}
+
+header .topbar>* {
+  padding: 10px;
+}
+
+header .topbar>div.logo,
+header .topbar>div.login {
+  width: 240px;
+  flex-shrink: 0;
+
+}
+
+header .topbar>.menu {
+  flex-grow: 1;
+  text-align: center;
+}
+
+header .topbar>.login {
+  text-align: right;
+}
+
+/* main */
+
+main .main-section {
+  background-color: #00008b;
+}
+
+main>div,
+main>section {
+  padding: 50px 0;
+}
+
+main .jumbotron {
+  background-color: #ee82ee;
+}
+
+main section .row {
+  display: flex;
+}
+
+main section:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+main section:nth-child(odd) .row {
+  flex-direction: row-reverse;
+}
+
+main section .row .aside-element {
+  width: 490px;
+  flex-shrink: 0;
+  background-color: #ffc0cb;
+}
+
+main section .row .content-element {
+  flex-grow: 1;
+  background-color: #1e90ff;
+}
+
+
+/* debug */
+.debug header .topbar>*,
+.debug main .jumbotron,
+.debug .row:empty,
+.debug .row>* {
+  border: 1px dashed black;
+}
+
+.debug main .jumbotron {
+  height: 400px;
+
+}
+
+.debug main section .row {
+  height: 500px;
+  background-color: blueviolet;
+}
