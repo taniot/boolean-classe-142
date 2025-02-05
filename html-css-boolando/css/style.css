@@ -31,6 +31,7 @@ header {
   padding: 20px 0;
   background-color: #ff6900;
   box-shadow: 0 1px 3px 0px #777;
+  margin-bottom: 60px;
 }
 
 header nav {
@@ -69,3 +70,60 @@ header .header-menu {
 header .header-menu.user-menu {
   justify-content: flex-end;
 }
+
+/* main */
+
+main .products {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px
+}
+
+main .products>div {
+  width: calc((100% - 40px) / 3);
+  flex-shrink: 0;
+  background-color: #ff6900;
+
+  height: 200px;
+  border: 2px solid black;
+}
+
+
+
+/* main .products-margin {
+  display: flex;
+
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+main .products-margin>div {
+  width: calc(100% / 3 - 20px);
+  flex-shrink: 0;
+  background-color: violet;
+  margin: 10px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+main .products-padding {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+main .products-padding>div {
+  width: calc(100% / 3);
+  flex-shrink: 0;
+  border: 1px dotted black;
+  padding: 10px;
+
+
+}
+
+main .products-padding>div article {
+  height: 200px;
+  border: 2px solid black;
+  background-color: purple;
+} */
