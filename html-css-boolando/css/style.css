@@ -96,7 +96,6 @@ main .products>article {
 
 
 main .products>article .article-images {
-  background-color: red;
   position: relative;
 }
 
@@ -116,9 +115,6 @@ main .products>article .article-images .tags li {
   font-size: 14px;
 }
 
-main .products>article .article-images .tags li.discount-value {
-  background-color: red;
-}
 
 main .products>article .article-images .tags li.green {
   background-color: green;
@@ -130,10 +126,11 @@ main .products>article .article-images .add-to-wishlist {
   position: absolute;
   top: 10px;
   right: 0;
+
 }
 
 
-main .products>article .article-images .hover-image {
+/* main .products>article .article-images .hover-image {
   display: none;
 }
 
@@ -143,7 +140,31 @@ main .products>article .article-images:hover .default-image {
 
 main .products>article .article-images:hover .hover-image {
   display: block;
+} */
+
+main .products>article .article-images .default-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s;
 }
+
+main .products>article .article-images .hover-image {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+main .products>article .article-images:hover .default-image {
+  opacity: 0;
+}
+
+main .products>article .article-images:hover .hover-image {
+  opacity: 1;
+
+}
+
+
+
 
 main .products>article .article-info {
   padding: 10px 0;
