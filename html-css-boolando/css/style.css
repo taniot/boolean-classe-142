@@ -8,9 +8,21 @@
 
 /* common */
 
+body {
+  font-family: sans-serif;
+}
+
 .container {
   max-width: 1390px;
   margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* header */
@@ -22,4 +34,29 @@ header {
 
 header nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  gap: 10px;
+
+}
+
+header ul a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header ul a:hover {
+  color: #000000;
+}
+
+header #logo {
+  display: inline-block;
+}
+
+header #logo img {
+  height: 30px;
 }
