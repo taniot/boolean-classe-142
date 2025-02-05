@@ -97,7 +97,39 @@ main .products>article {
 
 main .products>article .article-images {
   background-color: red;
+  position: relative;
 }
+
+main .products>article .article-images .tags {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  display: flex;
+  gap: 10px;
+
+
+
+}
+
+main .products>article .article-images .tags li {
+  color: #FFFFFF;
+  background-color: #777;
+  padding: 7px 10px;
+  font-size: 14px;
+}
+
+main .products>article .article-images .tags li.discount-value {
+  background-color: red;
+}
+
+main .products>article .article-images .tags li.green {
+  background-color: green;
+}
+
+
+
+
+
 
 main .products>article .article-info {
   padding: 10px 0;
@@ -122,6 +154,9 @@ main .products>article .old-price {
   text-decoration: line-through;
   font-size: 15px;
 }
+
+
+
 
 /* main .products-margin {
   display: flex;
