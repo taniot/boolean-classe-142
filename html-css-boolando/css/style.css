@@ -8,6 +8,11 @@
 
 /* common */
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -80,16 +85,43 @@ main .products {
   gap: 20px
 }
 
-main .products>div {
+main .products>article {
   width: calc((100% - 40px) / 3);
   flex-shrink: 0;
-  background-color: #ff6900;
+  /* background-color: #ff6900; */
 
-  height: 200px;
-  border: 2px solid black;
+  /* height: 200px; */
+  /* border: 2px solid black; */
 }
 
 
+main .products>article .article-images {
+  background-color: red;
+}
+
+main .products>article .article-info {
+  padding: 10px 0;
+}
+
+main .products>article .product-brand {
+  font-size: 14px
+}
+
+main .products>article .product-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+main .products>article .full-price {
+  color: red;
+}
+
+main .products>article .old-price {
+  font-weight: lighter;
+  text-decoration: line-through;
+  font-size: 15px;
+}
 
 /* main .products-margin {
   display: flex;
