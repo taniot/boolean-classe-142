@@ -6,6 +6,20 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: pink;
+/* common */
+
+.container {
+  max-width: 1390px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  padding: 20px 0;
+  background-color: #ff6900;
+}
+
+header nav {
+  display: flex;
 }
