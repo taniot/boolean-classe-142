@@ -132,6 +132,19 @@ main .products>article .article-images .add-to-wishlist {
   right: 0;
 }
 
+
+main .products>article .article-images .hover-image {
+  display: none;
+}
+
+main .products>article .article-images:hover .default-image {
+  display: none;
+}
+
+main .products>article .article-images:hover .hover-image {
+  display: block;
+}
+
 main .products>article .article-info {
   padding: 10px 0;
 }
@@ -155,6 +168,8 @@ main .products>article .old-price {
   text-decoration: line-through;
   font-size: 15px;
 }
+
+
 
 
 
