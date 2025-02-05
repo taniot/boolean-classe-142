@@ -17,7 +17,7 @@ body {
   font-family: sans-serif;
 
   /* condizioni per fixed */
-  padding-top: 110px;
+  /* padding-top: 110px; */
 }
 
 .container {
@@ -42,7 +42,9 @@ header {
   margin-bottom: 60px;
 
   /* condizioni per fixed */
-  height: 70px;
+  /* height: 70px;
+  z-index: 2; */
+
   z-index: 2;
 
 
@@ -207,6 +209,11 @@ main .products>article .old-price {
   top: 0;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 
 
 
