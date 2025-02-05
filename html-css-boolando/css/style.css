@@ -30,6 +30,7 @@ a {
 header {
   padding: 20px 0;
   background-color: #ff6900;
+  box-shadow: 0 1px 3px 0px #777;
 }
 
 header nav {
@@ -59,4 +60,12 @@ header #logo {
 
 header #logo img {
   height: 30px;
+}
+
+header .header-menu {
+  width: 250px;
+}
+
+header .header-menu.user-menu {
+  justify-content: flex-end;
 }
