@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: darkorange;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 196px;
+  position: relative;
+}
+
+.container {
+  background-color: darkkhaki;
+  border: 2px solid red;
+  position: relative;
+}
+
+.granpa-container {
+  background-color: yellow;
+  border: 2px solid green;
+  padding: 100px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: calc(100% / 3);
+  flex-shrink: 0;
+  /* height: 200px; */
+  border: 2px solid green;
+}
+
+.col img {
+  width: 100%;
+}
+
+
+.container-shop {
+
+  width: 900px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+.offer {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+header {
+  background-color: gray;
+}
+
+.prova {
+  height: 1000px;
+}
