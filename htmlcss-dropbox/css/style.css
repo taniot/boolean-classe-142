@@ -72,7 +72,7 @@ img {
 
 /* header */
 
-header {
+header.main {
   /* background-color: coral; */
   display: flex;
   justify-content: space-between;
@@ -80,13 +80,13 @@ header {
   box-shadow: 0 1px 3px 0px #ddd;
 }
 
-header ul {
+header.main ul {
   display: flex;
   gap: 40px;
   align-items: center;
 }
 
-header a {
+header.main a {
   color: #000000;
 }
 
@@ -154,12 +154,23 @@ header a {
 
 #plans .row .col {
   width: calc((100% - 100px) / 3);
-  height: 200px;
-  background-color: yellow;
+  /* height: 200px; */
+  /* background-color: yellow; */
   flex-shrink: 0;
 }
 
 #plans .row .col.big {
   flex-grow: 1;
   /* width: 100%; */
+}
+
+#plans article {
+  border: 1px solid #d0cfd4;
+  height: 100%;
+}
+
+#plans article header {
+  border-bottom: 1px solid #d0cfd4;
+  text-align: center;
+  padding: 10px;
 }
