@@ -1,0 +1,147 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* 1. (Slide 15) mobile first */
+.test-1 .box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background: blue;
+}
+
+@media screen and (min-width: 479px) {
+    .test-1 {
+        display: flex;
+    }
+    .test-1 .box {
+        margin-right: 0;
+        background: red;
+    }
+    .test-1 .box:last-child {
+        margin-left: 5px;
+    }
+}
+
+/* 2 (Slide 16) desktop first*/
+.test-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.test-2 img {
+    width: 200px;
+    margin: 0 5px 10px;
+    padding: 5px;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 780px) {
+    .test-2 {
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .test-2 {
+        flex-direction: column;
+    }
+}
+
+/* 3 (Slide 17) Desktop first*/
+.test-3 .item {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background: blue;
+}
+
+@media screen and (max-width: 479px) {
+    .test-3 .item {
+        border-radius: 50%;
+    }
+}
+
+/* 4 (Slide 18) Desktop first */
+.test-4 .box {
+    height: 200px;
+    margin: 1rem;
+    background: blue;
+}
+
+@media screen and (max-width: 479px) {
+    .test-4 .box {
+        background: #78d378;
+    }
+}
+
+@media screen and (min-width: 1401px) {
+    .test-4 .box {
+        background: #dd4b6b;
+    }
+}
+
+/* 5 (Slide 19) Mobile first */
+.main-menu {
+    margin: 20px 20px 20px 60px;
+}
+
+@media screen and (min-width: 780px) {
+    .main-menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 30px 15px;
+    }
+    .main-menu li {
+        margin: 0 5px;
+        padding: 5px 50px;
+        font-size: 21px;
+        color: #fff;
+        background: #777;
+    }
+}
+
+/* 6 (Slide 20) Mobile first */
+.test-6 .box {
+    height: 300px;
+    margin: 10px;
+    background: blue;
+}
+.test-6 .inner {
+    /* Oppure in HTML con attributo hidden */
+    display: none;
+}
+
+@media screen and (min-width: 580px) {
+    .test-6 .box {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .test-6 .inner {
+        display: flex;
+        width: 70%;
+        height: 100%;
+        padding: 25px;
+        background: green;
+    }
+    .test-6 .child {
+        width: 45%;
+        height: 100%;
+        background: red;
+    }
+    .test-6 .child:last-child {
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,62 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* UTILITIES */
+
+/* Layout */
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.col {
+    padding: 0 16px;
+}
+
+/* Spacing */
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+/* SEZIONE LATEST NEWS */
+
+/* Da 768 in su - 2 colonne
+(Mostra sempre con DevTools)
+*/
+@media screen and (min-width: 768px) {
+    .latest-news .columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .latest-news .col {
+        width: 50%;
+    }
+}
+
+/* Da 1024 in su - 4 colonne */
+@media screen and (min-width: 1024px) {
+    .latest-news .col {
+        width: 25%;
+    }
+}
