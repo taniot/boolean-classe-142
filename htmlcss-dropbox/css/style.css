@@ -65,3 +65,26 @@ header a {
 
 
 /* main */
+
+#jumbotron {
+  background-color: #b4d0e6;
+  margin-bottom: 150px;
+}
+
+#jumbotron .jumbotron-info {
+  display: flex;
+}
+
+#jumbotron .jumboleft {
+  width: 30%;
+}
+
+#jumbotron .jumboright {
+  width: 70%;
+}
+
+#jumbotron .container {
+  position: relative;
+  /* bottom: -100px; */
+  /* top: 100px; */
+}
