@@ -50,6 +50,14 @@ a {
   filter: brightness(1.4);
 }
 
+.btn-secondary {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
 img {
   width: 100%;
   display: block;
@@ -247,4 +255,32 @@ header.main a {
 #plans .big article .content .content-right {
   width: 30%;
   text-align: right;
+}
+
+/* partner */
+
+#partner {
+  margin-bottom: 160px;
+}
+
+#partner .container {
+  display: flex;
+}
+
+#partner .container .left {
+  width: 60%;
+}
+
+#partner .container .right {
+  width: 40%;
+  padding: 60px 50px;
+}
+
+#partner .container .right h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#partner .container .right p {
+  line-height: 26px;
 }
