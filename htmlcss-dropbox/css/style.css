@@ -129,6 +129,10 @@ header.main a {
 
 /* main plans */
 
+#plans {
+  margin-bottom: 210px;
+}
+
 #plans h2 {
   font-size: 30px;
 }
@@ -215,5 +219,32 @@ header.main a {
   border: 0;
   height: 1px;
   background-color: #d0cfd4;
+  margin-bottom: 50px;
+}
 
+#plans article .content .main-info {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#plans article .content #main-info i.fa-solid {
+  color: #0062fe;
+}
+
+#plans .big article .content {
+  display: flex;
+}
+
+#plans .big article .content .content-left {
+  width: 70%;
+}
+
+#plans .big article .content .content-left .subtitle {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+#plans .big article .content .content-right {
+  width: 30%;
+  text-align: right;
 }
