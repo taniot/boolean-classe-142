@@ -42,6 +42,10 @@ img {
   display: block;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 
 /* header */
 
@@ -86,5 +90,16 @@ header a {
 #jumbotron .container {
   position: relative;
   /* bottom: -100px; */
-  /* top: 100px; */
+  top: 100px;
+}
+
+#jumbotron h1 {
+  font-size: 70px;
+  font-weight: 900;
+  /* line-height: 80px; */
+  margin-bottom: 50px;
+}
+
+#jumbotron .fa-arrow-down {
+  font-size: 45px;
 }
