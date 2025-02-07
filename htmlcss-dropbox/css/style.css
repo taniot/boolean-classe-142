@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
 .btn {
   display: inline-block;
   padding: 10px 15px;
@@ -32,14 +37,19 @@ a {
   filter: brightness(1.4);
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
+
 /* header */
 
 header {
   /* background-color: coral; */
   display: flex;
-  padding: 20px;
   justify-content: space-between;
-  align-items: center;
+  padding: 20px;
   box-shadow: 0 1px 3px 0px #ddd;
 }
 
@@ -52,3 +62,6 @@ header ul {
 header a {
   color: #000000;
 }
+
+
+/* main */
