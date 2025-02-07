@@ -77,6 +77,13 @@ img {
   gap: 50px;
 }
 
+.row .col {
+  width: calc((100% - 100px) / 3);
+  /* height: 200px; */
+  /* background-color: yellow; */
+  flex-shrink: 0;
+}
+
 
 /* header */
 
@@ -139,6 +146,8 @@ header.main a {
 
 #plans {
   margin-bottom: 210px;
+  border-top: 1px solid #efefef;
+  padding-top: 50px;
 }
 
 #plans h2 {
@@ -283,4 +292,18 @@ header.main a {
 
 #partner .container .right p {
   line-height: 26px;
+}
+
+/* dropbox business */
+
+#dropbox-business {
+  margin-bottom: 160px
+}
+
+#dropbox-business h2 {
+  font-size: 40px;
+}
+
+#dropbox-business h3 {
+  font-size: 26px;
 }
