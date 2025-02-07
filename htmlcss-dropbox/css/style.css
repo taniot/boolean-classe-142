@@ -174,3 +174,46 @@ header.main a {
   text-align: center;
   padding: 10px;
 }
+
+#plans article .content {
+  padding: 40px 30px;
+}
+
+#plans article .content h3 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+#plans article .content .price {
+  margin-bottom: 15px;
+}
+
+#plans article .content .frequency {
+  color: #6b6d6a;
+  margin-bottom: 50px;
+}
+
+#plans article .content .options-include li {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+
+#plans article .content .buy-now {
+  margin-bottom: 30px;
+}
+
+
+#plans article .content .buy-now a {
+  text-decoration: underline;
+
+}
+
+#plans article .content hr {
+  width: 45px;
+  border: 0;
+  height: 1px;
+  background-color: #d0cfd4;
+
+}
