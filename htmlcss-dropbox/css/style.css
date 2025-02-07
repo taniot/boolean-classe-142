@@ -21,10 +21,23 @@ a {
   text-decoration: none;
 }
 
+
+
 .container {
   width: 1190px;
   margin: 0 auto;
 }
+
+.container.primary {
+  width: 1190px;
+}
+
+.container.secondary {
+  width: 1000px;
+}
+
+
+
 
 .btn {
   display: inline-block;
@@ -48,6 +61,12 @@ img {
 
 .mb-60 {
   margin-bottom: 60px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 
@@ -131,4 +150,16 @@ header a {
 
 #plans .invoice-options .radio.checked {
   border: 6px solid #0062fe;
+}
+
+#plans .row .col {
+  width: calc((100% - 100px) / 3);
+  height: 200px;
+  background-color: yellow;
+  flex-shrink: 0;
+}
+
+#plans .row .col.big {
+  flex-grow: 1;
+  /* width: 100%; */
 }
