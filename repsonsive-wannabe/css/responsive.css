@@ -1,0 +1,38 @@
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+.container {
+
+  /* max-width: 1140px;
+    width: 100%; */
+
+  max-width: 100%;
+}
+
+@media (max-width: 480px) {
+
+  .lessons .col,
+  .steps .col,
+  .why-us .col {
+    width: 100%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  /* gestito caso background diverso su ultima section */
+
+  .steps {
+    margin-bottom: 0;
+  }
+
+  .why-us {
+    background-color: black;
+    margin-bottom: 0;
+    padding-top: 3rem;
+  }
+
+}
