@@ -15,3 +15,13 @@ a {
 }
 
 /* common */
+
+body {
+  font-family: "Montserrat", serif;
+}
+
+.nerko-one-regular {
+  font-family: "Nerko One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
