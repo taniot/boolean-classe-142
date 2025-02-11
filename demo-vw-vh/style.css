@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+}
+
+header {
+  height: 70px;
+  background-color: aqua;
+}
+
+main {
+  height: calc(100% - 70px);
+  background-color: burlywood;
+}
