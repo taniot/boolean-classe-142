@@ -125,4 +125,30 @@ main .container {
 }
 
 /* desktop */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+  /* main-article-content */
+
+  #article-card .main-article-content {
+    display: flex;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  #article-card .article-content-header {
+
+    flex-grow: 1;
+  }
+
+
+  #article-card .article-content-info {
+    width: 400px;
+    flex-shrink: 0;
+
+  }
+
+
+
+
+}
