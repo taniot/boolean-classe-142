@@ -55,6 +55,14 @@ main .container {
 }
 
 
+/* banner */
+
+#article-banner {
+  display: none;
+}
+
+
+
 
 
 /* tablet */
@@ -67,6 +75,12 @@ main .container {
 
   main.site-main {
     padding: 60px;
+  }
+
+  /* banner */
+
+  #article-banner {
+    display: block;
   }
 
 
