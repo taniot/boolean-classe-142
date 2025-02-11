@@ -43,12 +43,30 @@ header .logo {
 }
 
 
+/* main */
+
+main.site-main {
+  padding: 30px 25px;
+}
+
+main .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+
 /* tablet */
 @media (min-width: 768px) {
 
 
   header.site-header {
     text-align: left;
+  }
+
+  main.site-main {
+    padding: 60px;
   }
 
 
