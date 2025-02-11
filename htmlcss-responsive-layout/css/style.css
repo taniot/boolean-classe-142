@@ -16,7 +16,9 @@ a {
 
 img {
   width: 100%;
+  /* rispetto al contenitore */
   display: block;
+  /* può essere dimensionata e rimuove lo spazio sotto */
 }
 
 /* common */
@@ -87,6 +89,20 @@ main .container {
   border-bottom-right-radius: 5px;
 }
 
+#article-card .article-content-info {
+  padding: 40px;
+
+}
+
+#article-card .article-content-info-title {
+  margin-bottom: 50px;
+}
+
+#article-card .article-content-info-list li {
+  margin-bottom: 20px;
+}
+
+
 
 
 
@@ -118,7 +134,17 @@ main .container {
     display: inline;
   }
 
+  /* 
+    article-content-info-list */
 
+  #article-card .article-content-info-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #article-card .article-content-info-list li {
+    width: calc(100% / 3);
+  }
 
   /* banner */
 
@@ -151,6 +177,15 @@ main .container {
     width: 400px;
     flex-shrink: 0;
 
+
+  }
+
+  #article-card .article-content-info-list {
+    display: block;
+  }
+
+  #article-card .article-content-info-list li {
+    width: 100%
   }
 
 
