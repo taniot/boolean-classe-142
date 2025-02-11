@@ -131,6 +131,34 @@ main .container {
 
 #article-banner {
   display: none;
+  margin-bottom: 30px;
+}
+
+
+/* recipe */
+
+#article-recipe h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#article-recipe hr {
+  width: 100px;
+  height: 3px;
+  border: 0;
+  background-color: #f7972e;
+  margin-bottom: 30px;
+}
+
+#article-recipe .article-recipe-content {
+  line-height: 2;
+}
+
+#article-recipe .article-recipe-content img {
+  width: 375px;
+  margin: 0 auto 15px;
+  box-shadow: 1px 5px 6px 0px #dedede;
 }
 
 
@@ -187,7 +215,12 @@ main .container {
     display: block;
   }
 
+  /* recipe */
 
+  #article-recipe .article-recipe-content img {
+    float: left;
+    margin: 0px 15px 15px 0;
+  }
 
 
 
