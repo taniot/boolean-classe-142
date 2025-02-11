@@ -103,6 +103,27 @@ main .container {
 }
 
 
+/* social */
+
+#article-social {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#article-social li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 1px 5px 6px 0px #dedede;
+  text-align: center;
+}
+
+#article-social li a .social-name {
+  display: none;
+  text-transform: uppercase;
+}
 
 
 
@@ -146,11 +167,28 @@ main .container {
     width: calc(100% / 3);
   }
 
+  /* article-social */
+
+  #article-social {
+    gap: 40px;
+  }
+
+  #article-social li {
+    width: calc(100% / 5);
+  }
+
+  #article-social li a {
+    display: block
+  }
+
   /* banner */
 
   #article-banner {
     display: block;
   }
+
+
+
 
 
 }
@@ -188,7 +226,11 @@ main .container {
     width: 100%
   }
 
+  /* article-social */
 
+  #article-social li a .social-name {
+    display: inline;
+  }
 
 
 }
