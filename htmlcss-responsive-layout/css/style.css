@@ -161,9 +161,31 @@ main .container {
   box-shadow: 1px 5px 6px 0px #dedede;
 }
 
+/* footer */
 
+footer {
+  background-color: #7c69a4;
+  padding: 30px 20px;
+  color: #ffffff;
+  text-align: center;
+}
 
+footer address {
+  margin-bottom: 10px;
+  font-style: normal;
+}
 
+footer .footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+footer .footer-menu a {
+  color: inherit;
+  text-decoration: underline;
+}
 
 /* tablet */
 @media (min-width: 768px) {
@@ -263,6 +285,16 @@ main .container {
 
   #article-social li a .social-name {
     display: inline;
+  }
+
+
+  /* footer  */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: initial;
+    align-items: center;
   }
 
 
