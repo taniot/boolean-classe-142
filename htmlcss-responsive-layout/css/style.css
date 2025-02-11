@@ -54,6 +54,27 @@ main .container {
   margin: 0 auto;
 }
 
+/* article-card */
+
+#article-card .article-category {
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+#article-card .article-title {
+  color: #4e3969;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#article-card .article-title-info {
+  display: none;
+}
+
+
+
 
 /* banner */
 
@@ -75,6 +96,12 @@ main .container {
 
   main.site-main {
     padding: 60px;
+  }
+
+  /* article-card */
+
+  #article-card .article-title-info {
+    display: inline;
   }
 
   /* banner */
