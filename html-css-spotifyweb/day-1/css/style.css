@@ -20,9 +20,32 @@ body {
 .main-content .sidebar {
   background-color: #72DDF7;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   /* width: 50px; */
   /* width: 300px; */
 }
+
+.main-content .sidebar #logo {
+  background-color: #CA2E55;
+}
+
+.main-content .sidebar #menu {
+  background-color: #8A6552;
+}
+
+.main-content .sidebar #playlist {
+  background-color: #462521;
+
+}
+
+.main-content .sidebar #profile {
+  background-color: #BDB246;
+  margin-top: auto;
+
+}
+
+
 
 .main-content main {
   background-color: #F4F4ED;
