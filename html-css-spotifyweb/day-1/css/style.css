@@ -5,3 +5,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  background-color: #F7AEF8;
+}
+
+.main-content {
+  height: calc(100% - 90px);
+  background-color: #8093F1;
+}
+
+footer {
+  height: 90px;
+  background-color: #B388EB;
+}
