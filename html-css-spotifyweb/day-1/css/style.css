@@ -14,9 +14,35 @@ body {
 .main-content {
   height: calc(100% - 90px);
   background-color: #8093F1;
+  display: flex
 }
+
+.main-content .sidebar {
+  background-color: #72DDF7;
+  flex-shrink: 0;
+  /* width: 50px; */
+  /* width: 300px; */
+}
+
+.main-content main {
+  background-color: #F4F4ED;
+  flex-grow: 1;
+  /* width: calc(100% - 50px); */
+}
+
+
 
 footer {
   height: 90px;
   background-color: #B388EB;
+}
+
+
+/* desktop */
+@media (min-width: 992px) {
+
+  .main-content .sidebar {
+    width: 230px;
+  }
+
 }
