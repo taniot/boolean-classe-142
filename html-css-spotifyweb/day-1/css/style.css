@@ -22,12 +22,24 @@ body {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  padding: 10px 0 20px;
   /* width: 50px; */
   /* width: 300px; */
 }
 
 .main-content .sidebar #logo {
   background-color: #CA2E55;
+  padding: 0 10px;
+}
+
+.main-content .sidebar #logo .logo {
+  width: 30px;
+  height: 30px;
+}
+
+.main-content .sidebar #logo .logo-lg {
+  display: none;
+  width: 130px;
 }
 
 .main-content .sidebar #menu {
@@ -66,11 +78,24 @@ footer {
 }
 
 
+
+
 /* desktop */
 @media (min-width: 992px) {
 
   .main-content .sidebar {
     width: 230px;
   }
+
+  /* logo */
+  .main-content .sidebar #logo .logo {
+    display: none;
+  }
+
+  .main-content .sidebar #logo .logo-lg {
+    display: inline;
+
+  }
+
 
 }
