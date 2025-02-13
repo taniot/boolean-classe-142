@@ -6,6 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spotify</title>
 
+  <!-- font montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
 
   <!-- style -->
   <link rel="stylesheet" href="css/style.css">
@@ -24,19 +31,46 @@
       <div id="logo">
         <img src="img/logo-small.svg" alt="Spotify" class="logo">
         <img src="img/logo.svg" alt="Spotify" class="logo-lg">
-
       </div>
 
       <!-- logo-->
-      <div id="menu">menu</div>
+      <ul id="menu">
+        <li class="active"><a href="#">
+
+            <img src="img/home.svg" alt="Home">
+            <!-- <div class="icon-default home"></div> -->
+            <span class="menu-text">Home</span>
+          </a></li>
+        <li><a href="#">
+            <img src="img/search.svg" alt="Search">
+            <span class="menu-text">Cerca</span>
+          </a></li>
+        <li><a href="#">
+            <img src="img/libreria.svg" alt="Library">
+            <span class="menu-text">La tua libreria</span>
+          </a></li>
+      </ul>
 
       <!-- logo-->
-      <div id="playlist">playlist</div>
-
+      <!-- Playlist -->
+      <div id="playlist">
+        <div class="header">Playlist</div>
+        <div class="create-playlist">Create</div>
+        <ul class="list">
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+          <li>playlist</li>
+        </ul>
+      </div>
 
       <!-- logo-->
       <div id="profile">profile</div>
-
 
     </div>
 

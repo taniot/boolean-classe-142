@@ -6,9 +6,18 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 body {
   height: 100vh;
   background-color: #F7AEF8;
+  font-family: "Montserrat", serif;
 }
 
 .main-content {
@@ -18,17 +27,17 @@ body {
 }
 
 .main-content .sidebar {
-  background-color: #72DDF7;
+  color: #ffffff;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   padding: 10px 0 20px;
   /* width: 50px; */
   /* width: 300px; */
+  overflow: hidden;
 }
 
 .main-content .sidebar #logo {
-  background-color: #CA2E55;
   padding: 0 10px;
 }
 
@@ -44,20 +53,67 @@ body {
 
 .main-content .sidebar #menu {
   background-color: #8A6552;
+  padding: 20px 0;
+}
+
+.main-content .sidebar #menu li {
+  margin-bottom: 5px;
+  padding: 0 10px 0 7px;
+  line-height: 35px;
+}
+
+
+.main-content .sidebar #menu li a {
+  color: #fff;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500
+}
+
+.icon-default {
+  width: 25px;
+  height: 25px;
+  background-color: #A41623;
+}
+
+.icon-default.home {
+  mask-image: url('../img/home.svg');
+  mask-size: cover;
+}
+
+.main-content .sidebar #menu li a .menu-text {
+  display: none;
+}
+
+.main-content .sidebar #menu li a img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
 }
 
 .main-content .sidebar #playlist {
   background-color: #462521;
+  display: none;
+  padding: 10px 20px;
+  overflow: hidden;
+}
 
+.main-content .sidebar .list {
+  height: 100%;
+  overflow-y: auto;
 }
 
 .main-content .sidebar #profile {
   background-color: #BDB246;
   margin-top: auto;
-
 }
 
 
+/* main */
 
 .main-content main {
   background-color: #F4F4ED;
@@ -70,12 +126,20 @@ body {
   background-color: chartreuse;
 }
 
-
+/* footer */
 
 footer {
   height: 90px;
   background-color: #B388EB;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -94,8 +158,30 @@ footer {
 
   .main-content .sidebar #logo .logo-lg {
     display: inline;
-
   }
+
+
+  .main-content .sidebar #menu li {
+    padding: 0 20px;
+    border-left: 3px solid transparent;
+  }
+
+  .main-content .sidebar #menu li.active {
+    border-color: #adff2f;
+  }
+
+  .main-content .sidebar #menu li a {
+    justify-content: flex-start;
+  }
+
+  .main-content .sidebar #menu li a .menu-text {
+    display: inline;
+  }
+
+  .main-content .sidebar #playlist {
+    display: block;
+  }
+
 
 
 }
