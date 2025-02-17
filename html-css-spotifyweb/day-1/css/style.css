@@ -20,6 +20,11 @@ body {
   font-family: "Montserrat", serif;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .main-content {
   height: calc(100% - 90px);
   background-color: #8093F1;
@@ -119,12 +124,142 @@ body {
   background-color: #F4F4ED;
   flex-grow: 1;
   /* width: calc(100% - 50px); */
+  overflow-y: auto;
 }
 
 .main-content main .top-main {
   height: 90px;
-  background-color: chartreuse;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: red; */
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+
 }
+
+.main-content main .top-main .btn {
+  display: inline-block;
+  background-color: #adff2f;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 2px solid coral;
+}
+
+.main-content main .nav-menu ul {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* .main-content main .nav-menu ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content main .nav-menu ul li div {
+  height: 2px;
+  background-color: red;
+  width: 30%;
+  display: none;
+}
+
+.main-content main .nav-menu ul li:hover div {
+  display: block;
+} */
+
+/* .main-content main .nav-menu ul a:hover {
+  border-bottom: 2px solid red;
+} */
+
+.main-content main .nav-menu ul a {
+  background-color: yellow;
+}
+
+.main-content main .nav-menu ul a:after {
+  content: '';
+  height: 4px;
+  background-color: red;
+  display: block;
+  width: 30px;
+}
+
+
+
+.main-content main .album-container {
+  padding: 20px;
+}
+
+.main-content main .album-container>section {
+  margin-bottom: 30px;
+}
+
+
+
+.main-content main .album-container .albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-content main .album-container .albums>* {
+
+  /* background-color: crimson;
+  border: 2px solid black; */
+  width: calc((100% - 40px) / 2);
+  flex-shrink: 0;
+}
+
+.main-content main .album-container .albums .album-info {
+  text-align: center;
+  padding: 15px;
+}
+
+.main-content main .album-container .albums article {
+  cursor: pointer;
+}
+
+.main-content main .album-container .albums article .image-container {
+  position: relative;
+}
+
+.main-content main .album-container .albums article .image-container {
+  position: relative;
+}
+
+.main-content main .album-container .albums article .album-hover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.main-content main .album-container .albums article:hover .album-hover {
+  display: flex;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.main-content main .album-container .albums article:hover .album-info {
+  background-color: #B388EB;
+  color: green;
+}
+
 
 /* footer */
 
@@ -137,7 +272,12 @@ footer {
 
 
 
-
+@media (min-width: 768px) {
+  .main-content main .album-container .albums>* {
+    /* width: calc(100% / 4); */
+    width: calc((100% - 60px) / 4);
+  }
+}
 
 
 
@@ -180,6 +320,11 @@ footer {
 
   .main-content .sidebar #playlist {
     display: block;
+  }
+
+  .main-content main .album-container .albums>* {
+    /* width: calc(100% / 6); */
+    width: calc((100% - 100px) / 6);
   }
 
 
