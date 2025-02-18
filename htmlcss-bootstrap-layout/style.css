@@ -1,0 +1,12 @@
+:root {
+  --bs-primary-rgb: 0, 0, 0
+}
+
+.bordo-gaetano {
+  --bs-border-color: red;
+}
+
+.bordo-enrico {
+  --bs-border-width: 5px;
+  --bs-border-color: green;
+}
