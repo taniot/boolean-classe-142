@@ -1,13 +1,13 @@
-body {
+/* body {
   background-color: gray
-}
+} */
 
 /* div.container {
   max-width: 1400px;
   margin: 0 auto;
 } */
 
-[class^='container'] {
+/* [class^='container'] {
   border: 1px dashed black;
   background-color: lightblue;
   min-height: 80vh;
@@ -21,4 +21,10 @@ body {
 [class^='col'] {
   background-color: #f1d2e7;
   border: 1px solid #d0a8eb;
+} */
+
+.custom-border {
+  --bs-border-color: red;
+  --bs-border-style: dotted;
+  --bs-border-width: 5px;
 }
