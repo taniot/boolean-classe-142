@@ -35,9 +35,6 @@ input -> computer -> output
 costo totale del biglietto
 
 
-
-
-
 ## pseudocodice
 
 1) Chiedo all'utente i km che vuole percorrere e li salvo in una variabile e li trasformo in numero (userKm)
