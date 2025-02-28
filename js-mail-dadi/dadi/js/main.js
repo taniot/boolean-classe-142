@@ -18,14 +18,23 @@ Invece di generare il numero random per l'utente, chiedilo con un prompt!
 
 
 // const userNumber = Math.ceil(Math.random() * 6); //1 a 6
-const userNumber = parseInt(prompt('Inserisci un numero compreso tra 1 e 6'));
-const cpuNumber = Math.ceil(Math.random() * 6); //1 a 6
+// const userNumber = parseInt(prompt('Inserisci un numero compreso tra 1 e 6'));
 
-const isNumberValid = userNumber >= 1 && userNumber <= 6 && !isNaN(userNumber);
 
-console.log(isNumberValid);
+let userNumber;
+let isNumberValid = false;
+let retries = 5;
+
+
+//controlla se utente può giocare per 5 volte
+while (isNumberValid !== true && retries > 0) {
+  userNumber = parseInt(prompt('Inserisci un numero compreso tra 1 e 6: ' + retries));
+  isNumberValid = userNumber >= 1 && userNumber <= 6 && !isNaN(userNumber);
+  retries--;
+}
 
 if (isNumberValid) {
+  const cpuNumber = Math.ceil(Math.random() * 6); //1 a 6
   if (userNumber > cpuNumber) {
     console.log(`Utente batte computer con punteggio di ${userNumber} vs ${cpuNumber}`);
   } else if (cpuNumber > userNumber) {
