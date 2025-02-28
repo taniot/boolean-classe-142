@@ -62,8 +62,11 @@ console.log(userFound);
 
 
 do {
+
+  const currentEmail = emails[index];
+
   // console.log('sono alla prima iterazione');
-  if (emails[index] === userEmail) {
+  if (currentEmail === userEmail) {
     console.log(`Ho trovato la mail ${userEmail} in posizione ${index}`);
     userFound = true;
   }
