@@ -27,9 +27,22 @@ const kmUserElement = document.getElementById('km-user');
 //campo age utente
 const ageUserElement = document.getElementById('age-user');
 
-console.log(generateTicket);
-console.log(kmUserElement);
-console.log(ageUserElement);
+
+//info
+//info km in pagina
+const kmInfoElement = document.getElementById('km-info');
+//info age in pagina
+const ageInfoElement = document.getElementById('age-info');
+//info price in pagina
+const priceInfoElement = document.getElementById('price-info');
+//info price in pagina
+const discountInfoElement = document.getElementById('discount-info');
+
+
+
+console.log(kmInfoElement);
+console.log(ageInfoElement);
+console.log(priceInfoElement);
 
 
 
@@ -71,7 +84,21 @@ generateTicket.addEventListener('submit', function (e) {
 
   console.log(ticketPrice);
 
-  console.log(`Il prezzo del biglietto è ${ticketPrice.toFixed(2)}€`);
+
+  const ticketPriceFormatted = ticketPrice.toFixed(2);
+
+
+  console.log(`Il prezzo del biglietto è ${ticketPriceFormatted}€`);
+
+
+  //output in pagina
+
+  kmInfoElement.innerText = kmUser;
+  ageInfoElement.innerText = ageUser;
+  priceInfoElement.innerText = ticketPriceFormatted;
+  discountInfoElement.innerText = `Sconto applicato: ${discount}`;
+
+
 
 })
 
