@@ -26,8 +26,6 @@ const sliderElements = [
 /* todo: verificare al click se modificare gestione innerHTML */
 
 const sliderContainerElement = document.querySelector('.slider-container');
-
-
 let currentIndex = 0;
 
 renderHTML(sliderContainerElement, sliderElements);
@@ -37,9 +35,8 @@ const nextElement = document.querySelector('.next');
 
 const slideElements = document.querySelectorAll('.slide');
 
+//todo: interrompere incremento o ricominciare da capo
 nextElement.addEventListener('click', function () {
-
-  console.log('next');
 
   slideElements[currentIndex].classList.remove('active');
 
@@ -49,9 +46,8 @@ nextElement.addEventListener('click', function () {
 
 })
 
+//todo: interrompere decremento o ricominciare da capo
 prevElement.addEventListener('click', function () {
-
-  console.log('prev');
 
   slideElements[currentIndex].classList.remove('active');
 
@@ -86,7 +82,6 @@ function createHTMLElement(obj, index) {
   if (index === currentIndex) {
     activeClass = 'active';
   }
-
 
   return `<figure class="slide ${activeClass}">
         <img src="img/${obj.img}" alt="${obj.title}">
