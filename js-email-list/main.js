@@ -72,11 +72,24 @@ function generateEmails() {
   emailsElement.innerHTML = '';
   for (let i = 0; i < emailsNumber; i++) {
 
-    axios.get(uri)
-      .then(risultato => {
-        const { response: email } = risultato.data;
+    // axios.get(uri)
+    //   .then(risultato => {
+    //     const { response: email } = risultato.data;
+    //     emailsElement.innerHTML += `<li>${email}</li>`;
+    //   });
+
+
+    fetch(uri) //promessa => promise
+      .then(response => {
+        return response.json(); //promessa => promise
+      })
+      .then(data => {
+        const { response: email } = data;
         emailsElement.innerHTML += `<li>${email}</li>`;
       });
+
+
+
   }
 }
 
