@@ -1,0 +1,13 @@
+{
+  "name": "pizzeria",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "Gaetano Frascolla",
+  "license": "ISC",
+  "description": ""
+}
