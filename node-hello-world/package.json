@@ -4,7 +4,8 @@
   "description": "/*",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "watch": "node --watch index.js"
   },
   "keywords": [],
   "author": "Gaetano Frascolla",
