@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const pizze = require('../data/pizze.js');
-//PIZZE
-
 
 //index
 router.get('/', (req, res) => {
@@ -10,11 +8,7 @@ router.get('/', (req, res) => {
 })
 
 //show 
-//127.0.0.1/pizzas/id
-// router.get('/pizzas/id')
-//127.0.0.1/pizzas/qualunquecosa
 router.get('/:id', (req, res) => {
-  // res.send(`Dettagli della pizza con id ${req.params.id}`)
   const { id } = req.params;
   res.send(`Dettagli della pizza con id ${id}`);
 })
