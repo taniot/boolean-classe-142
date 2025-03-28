@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const pizze = require('../data/menu.js');
+const pizze = require('../data/pizze.js');
 //PIZZE
 
 
