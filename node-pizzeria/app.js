@@ -10,7 +10,6 @@ app.use(express.static('public'));
 app.use('/pizzas', pizzaRouter);
 app.use('/beers', birreRouter);
 
-
 app.listen(port, () => {
   console.log('Sono un server attivo sulla porta ' + port);
 })
