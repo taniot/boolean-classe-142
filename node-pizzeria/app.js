@@ -7,6 +7,12 @@ const pizzaRouter = require('./routers/pizzas.js');
 const birreRouter = require('./routers/beers.js');
 
 app.use(express.static('public'));
+// registro il body-parser per "application/json"
+app.use(express.json());
+
+
+
+
 app.use('/pizzas', pizzaRouter);
 app.use('/beers', birreRouter);
 
