@@ -2,6 +2,11 @@ const express = require('express');
 const router = express.Router();
 const birre = require('../data/birre.js');
 
+const enrico = require('../middlewares/enrico.js');
+
+router.use(enrico);
+
+
 //Birre
 
 

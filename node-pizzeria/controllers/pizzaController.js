@@ -2,12 +2,12 @@ const pizze = require('../data/pizze.js');
 
 //CRUD
 
-function index(req, res) {
+function index(req, res, next) {
 
   let filteredPizzas = pizze;
 
   console.log(req.query);
-
+  edoardo.get();
   //ricerca per ingrediente
   if (req.query.ingredient) {
     console.log('filtro per ingrediente');
@@ -36,10 +36,12 @@ function show(req, res) {
   const pizza = pizze.find(pizza => pizza.id === id);
 
   if (!pizza) {
-    return res.status(404).json({
+    res.json({
       error: 'Not Found',
       message: 'Pizza non trovata'
     });
+    return;
+
   }
 
   res.json(pizza);

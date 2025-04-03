@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
+//middleware
+const checkTime = require('../middlewares/checkTime.js');
+const enrico = require('../middlewares/enrico.js');
+//controller
 const pizzaController = require('../controllers/pizzaController.js');
 
 //index
@@ -16,4 +20,6 @@ router.patch('/:id', pizzaController.modify);
 //destroy
 router.delete('/:id', pizzaController.destroy);
 
+
 module.exports = router;
+
