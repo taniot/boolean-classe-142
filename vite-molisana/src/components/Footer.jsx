@@ -1,5 +1,4 @@
-import Logo from './Logo'
-
+import Logo from './Logo';
 const Footer = () => {
   return (
     <footer className="container">

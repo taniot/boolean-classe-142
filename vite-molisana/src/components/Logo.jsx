@@ -1,8 +1,12 @@
+const Logo = (props) => {
+  const slogan = props.slogan;
 
-import logoImage from '../assets/img/logo.png';
+  return (
+    <figure>
+      <img src="/logo.png" alt="Logo" />
+      {slogan && <p>{slogan}</p>}
+    </figure>
+  )
+}
 
-const Logo = () => <figure>
-  <img src={logoImage} alt="Logo" />
-</figure>;
-
-export default Logo;
+export default Logo

@@ -1,10 +1,15 @@
-import Logo from "./Logo";
-import Menu from "./Menu";
+import Logo from './Logo';
+import Navbar from './Navbar';
 
-const Header = () =>
-  <header>
-    <Logo />
-    <Menu />
-  </header>;
+const Header = (props) => {
 
-export default Header;
+
+  return (
+    <header>
+      <Logo slogan={props.slogan} />
+      <Navbar links={props.links} />
+    </header>
+  )
+}
+
+export default Header
