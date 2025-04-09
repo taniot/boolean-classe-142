@@ -1,0 +1,9 @@
+.btn {
+  background-color: blue;
+  color: white;
+}
+
+.btn.selected {
+  background-color: yellow;
+  color: black;
+}
