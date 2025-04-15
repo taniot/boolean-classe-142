@@ -18,6 +18,7 @@ function App() {
   // }
 
   const [menuPizze, setMenuPizze] = useState([]);
+  const [error, setError] = useState(null);
 
   const [formPizza, setFormPizza] = useState({
     title: 'DEMO',
@@ -35,8 +36,15 @@ function App() {
     }
 
     // if (event.target.name === 'ingredients') {
-    //   value = 
+    //   value =
     // }
+
+    /*
+    if (event.target.type === 'number' && price && price < 0) {
+    setError('Prezzo non valido');
+    }
+
+    */
 
 
     setFormPizza(formPizza => ({
@@ -54,7 +62,7 @@ function App() {
 
   function savePizza(event) {
 
-    event.preventDefault();
+
 
     const pizze = [...menuPizze, formPizza];
 
