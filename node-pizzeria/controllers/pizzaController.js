@@ -7,7 +7,7 @@ function index(req, res, next) {
   let filteredPizzas = pizze;
 
   console.log(req.query);
-  edoardo.get();
+  // edoardo.get();
   //ricerca per ingrediente
   if (req.query.ingredient) {
     console.log('filtro per ingrediente');
