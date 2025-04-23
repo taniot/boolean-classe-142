@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import DefaultLayout from "./layouts/DefaultLayout";
 import CustomerService from "./pages/CustomerService";
+import ProductsLayout from "./layouts/ProductsLayout";
+import Products from "./pages/Products";
 
 function App() {
 
@@ -11,8 +13,10 @@ function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/" Component={Home} /> */}
           <Route path="/chi-siamo" element={<About />} />
         </Route>
+
       </Routes>
     </BrowserRouter>
   )
@@ -20,3 +24,11 @@ function App() {
 
 export default App
 
+
+
+
+
+
+
+
+  */
